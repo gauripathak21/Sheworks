@@ -1,0 +1,123 @@
+<div class="row">
+    <div class="col"></div>
+    <div class="col-11">
+        <div class="row mx-0" style="border: 1px solid #ddd;">
+            <div class="col-7 bg-white">
+                <div class="row mx-0">
+                    <div class="col-4">
+                        <img src="assets/shework.jpg" class="list-content">
+                    </div>
+                    <div class="col-8 px-0">
+                        <label class="mb-0" style="color: blue;">Steffy Walker-<label style="font-size: 12px;color: initial;">Php Developer</label></label>
+                        <div class="row mx-0" style="color: #747278;">
+                            <section class="col-12 px-0">
+                                <label class="mb-0" style="font-size: 11px;"><b>Total Experience:</b> <span>9 years</span></label><br>
+                                <label class="mb-0" style="font-size: 11px;"><b>Skills </b><span>Php,Html5,Css</span></label>
+                                <p class="mt-1 mb-0" style="font-size: 11px;">Steffy is a passionate designer about user and interface design.During the last few year, She has specialized herself in usability tests, researches, and navigable prototypes </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mt-4" style="height: 0%;border-top: 1px solid #ddd;">
+                <button type="submit" class="mt-2 btn border-gradient border-gradient-purple">Save</button>
+                <div style="float: right;">
+                    <input type="checkbox"> Compare
+                    <button type="submit" class="m-2 btn border-gradient border-gradient-purple">Shortlist</button>
+                    <button type="submit" class="m-2 btn border-gradient btn-selected">Scheduled call</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-2" style="border: 1px solid #ddd;">
+            <label style="color: darkviolet;">Portfolio</label>
+            <div class="row d-flex mx-0">
+                <div class="col-2 img-div">
+                    <img src="assets/b1.jpg" class="w-100" style="height: 70%;">
+                    <label style="font-size: 14px;">Mobile Application</label>
+                    <label style="font-size: 12px;">Hundai</label>
+                </div>
+                <div class="col-2 img-div">
+                    <img src="assets/b2.jpg" class="w-100" style="height: 70%;">
+                    <label style="font-size: 14px;">Mobile Application</label>
+                    <label style="font-size: 12px;">Hundai</label>
+                </div>
+                <div class="col-2 img-div">
+                    <img src="assets/b3.jpg" class="w-100" style="height: 70%;">
+                    <label style="font-size: 14px;">Mobile Application</label>
+                    <label style="font-size: 12px;">Hundai</label>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2" style="border: 1px solid #ddd;">
+            <label style="color: darkviolet;">Skills and Tools</label>
+            <div class="row d-flex mx-0">
+                <div *ngFor="let data of skillData; let i=index">
+                    <label class="skill-div">{{data.name}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2" style="border: 1px solid #ddd;">
+            <label style="color: darkviolet;">Industry Experience</label>
+            <div class="row d-flex mx-0">
+                <div *ngFor="let data of indExperience; let i=index">
+                    <label class="skill-div">{{data.name}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2" style="border: 1px solid #ddd;">
+            <label style="color: darkviolet;">Working Hours</label>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Sunday</th>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thrusday</th>
+                        <th scope="col">Friday</th>
+                        <th scope="col">Saturday</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>12:00PM</td>
+                        <td>09:00PM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>to</td>
+                        <td>to</td>
+                        <td>to</td>
+                        <td>to</td>
+                        <td>to</td>
+                        <td>to</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>12:00PM</td>
+                        <td>9:00PM</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-2" style="border: 1px solid #ddd;">
+            <label style="color: darkviolet;">Social Media Profile</label>
+            <div class="row d-flex mx-0">
+                <img class="social-media-img" src="assets/i.png">
+                <img class="social-media-img" src="assets/g.png">
+                <img class="social-media-img" src="assets/t.png">
+                <img class="social-media-img" src="assets/f.png" style=" width: 40px;">
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>

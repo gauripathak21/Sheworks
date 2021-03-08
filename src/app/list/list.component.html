@@ -1,0 +1,76 @@
+<div class="text-center">
+    <label><b>LIST OF CANDIDATES</b></label>
+    <div class="p-2 row justify-content-center">
+        <input class="col-6 search-text px-0" type="text" placeholder=" Search with skill, Job Title..">
+        <i class="fa fa-search search-icon"></i>
+    </div>
+</div>
+<div class="row mx-0 p-4">
+    <div class="col col-3">
+        <label>Filter</label>
+        <div class="filter-bg">
+            <div class="text-center">
+                <input class="col-9 select-filter" placeholder="Experience">
+            </div>
+            <div class="text-center" *ngFor="let data of experienceData; let i=index">
+                <label>
+                  <input type="checkbox" [value]="data.value" (change)="onCheckboxChange($event)" />
+                  {{data.name}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="row">
+            <label>
+                <input type="checkbox" /> Save all Profile</label>
+            <label class="pl-2">
+                <input type="checkbox" /> Save to list</label>
+        </div>
+        <div class="row" style="max-width: 80%;border: 1px solid #ddd;border-radius: 5px;">
+            <ul class="nav justify-content-end">
+                <li class="nav-item text-white" style="background-image: linear-gradient(to right, #e987e1, #635ca5) !important;
+                border-radius: 5px;">
+                    <a class=" nav-link active " href="# ">Total Job Results 123</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Past Jobs 90 Days</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Posted on 30 job by Shework</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row mt-2 list-div" style="max-width: 80%;cursor: pointer;" (click)="goToDetailsPage()">
+            <div class="col-12 bg-white" style="border-radius: 20px;">
+                <div class="row">
+                    <div class="col-4">
+                        <input type="checkbox" />
+                        <div>
+                            <img src="assets/shework.jpg" class="list-content">
+                        </div>
+                    </div>
+                    <div class="col-8 px-0">
+                        <label class="mb-0" style="color: blue;">Steffy Walker-<label style="font-size: 12px;color: initial;">Php Developer</label></label>
+                        <div class="row mx-0" style="color: #747278;">
+                            <section class="col-12 px-0">
+                                <label class="mb-0" style="font-size: 11px;"><b>Total Experience:</b> <span>9 years</span></label><br>
+                                <label class="mb-0" style="font-size: 11px;"><b>Skills </b><span>Php,Html5,Css</span></label>
+                                <p class="mt-1 mb-0" style="font-size: 11px;">Steffy is a passionate designer about user and interface design.During the last few year, She has specialized herself in usability tests, researches, and navigable prototypes </p>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4 w-90" style="height: 0%;border-top: 1px solid #ddd;">
+                <button type="submit" class="mt-2 btn border-gradient border-gradient-purple">Save</button>
+                <div style="float: right;">
+                    <input type="checkbox"> Compare
+                    <button type="submit" class="m-2 btn border-gradient border-gradient-purple">Shortlist</button>
+                    <button type="submit" class="m-2 btn border-gradient btn-selected">Scheduled call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
